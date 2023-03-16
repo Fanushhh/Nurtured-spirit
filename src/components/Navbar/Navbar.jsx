@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import './Navbar.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 export default function Navbar(){

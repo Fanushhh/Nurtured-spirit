@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { sliderData } from './sliderData';
+import  {sliderData}  from './sliderData';
 import './ImageSlider.scss';
 export default function ImageSlider(){
     const responsive = {
