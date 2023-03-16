@@ -1,6 +1,8 @@
 import './Form.scss';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+const ReactPhoneInput = PhoneInput.default ? PhoneInput.default : PhoneInput;
+
 
 export default function Form(){
     return(
@@ -19,7 +21,7 @@ export default function Form(){
             <div>
                 <label className='phoneInput'>
                     Phone Number
-                    <PhoneInput type='phone' name='phone' />
+                    <ReactPhoneInput type='phone' name='phone' />
                 </label>
             </div>
             <div>

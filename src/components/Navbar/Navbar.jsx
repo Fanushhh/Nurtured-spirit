@@ -1,6 +1,8 @@
 import { useState } from "react";
 import './Navbar.scss';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from "react-router-dom";
+
 export default function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,10 +21,10 @@ export default function Navbar(){
                 <MenuIcon onClick={handleOpenMenu} fontSize="large" color="#FFFFFF"/>
                 {isMenuOpen && (
                     <ul>
-                        <a className="a" href='/Nurtured-spirit-project'>Home</a>
-                        <a className="a" href='/services'>Services</a>
-                        <a className="a" href='/contact'>Contact</a>
-                        <a className="a" href='/blog'>Blog</a>
+                        <Link className="link" to='/Nurtured-spirit-project'>Home</Link>
+                        <Link className="link" to='/services'>Services</Link>
+                        <Link className="link" to='/contact'>Contact</Link>
+                        <Link className="link" to='/blog'>Blog</Link>
                     </ul>
                 )}
             </nav>
