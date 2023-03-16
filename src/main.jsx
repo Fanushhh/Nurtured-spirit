@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/Nurtured-spirit-project/' element={<SharedLayout />}>
+        <Route path='/Nurtured-spirit-project' element={<SharedLayout />}>
           <Route index element={<App />} />
         </Route>
       </Routes>
