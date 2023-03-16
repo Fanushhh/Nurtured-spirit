@@ -2,18 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.scss'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-          <Route path='/' element={<SharedLayout />}>
-            <Route index element={<App />} />
-          </Route>
-      </Routes>   
-    </BrowserRouter>
+        <Route path='/' element={<SharedLayout />}>
+          <Route index element={<App />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   </React.StrictMode>,
 )
