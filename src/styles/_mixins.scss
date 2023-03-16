@@ -1,0 +1,17 @@
+@mixin for-tablet{
+    @media screen and (min-width:45.75rem) {
+        @content;
+    }
+}
+
+@mixin for-laptop{
+    @media screen and (min-width:70rem) {
+        @content;
+    }
+}
+
+@mixin for-desktop{
+    @media screen and (min-width:90.06rem) {
+        @content;
+    }
+}

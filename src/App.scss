@@ -1,0 +1,42 @@
+@import './styles/variables';
+@import './styles/mixins';
+
+
+
+body{
+  font-family: $font-fam-body;
+  font-size: $font-size-mobile;
+  color:black;
+  min-height: 100vh;
+  background: url('./images/bg-pattern.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+h1, h2, h3{
+  font-family: $font-fam-heading;
+  font-weight: 400;
+  color:#D4AF37;
+  font-size: 2rem;
+  @include for-tablet{
+    font-size: calc(50/16) + rem;
+  }
+  
+}
+
+.App{
+  padding: 2rem 1rem calc(62/16) + rem;
+
+  @include for-tablet{
+    padding: calc(80/16) + rem 1.2rem calc(80/16) + rem;
+  }
+
+  @include for-laptop{
+    padding: calc(124/16) + rem;
+  }
+  @include for-desktop{
+    
+    padding: calc(160/16) + rem;
+}
+}

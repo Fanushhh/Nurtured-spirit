@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.aboutSection{
+    margin-top: calc(60/16) + rem;
+    .aboutMeTitle{
+        font-family: $font-fam-heading;
+        color:#D4AF37;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+    .aboutSectionWrapper{
+        
+        .profileImgContainer{
+            margin-bottom: 2rem;
+            max-width: 270px;
+            margin: 2rem auto;
+            
+        }
+        .aboutDetails{
+            p{
+                padding-bottom: 1rem;
+            }
+            .extendedSection{
+                display: none;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color:#D4AF37;
+            font-weight: 700;
+            padding-top: 1rem;
+            img{
+                margin-left: 1rem;
+                display: inline-block;
+            }
+        }
+    }
+
+    @include for-tablet{
+        .aboutMeTitle{
+            font-size: calc(50/16) + rem;
+        }
+        .aboutSectionWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:calc(62/16) + rem;
+            .aboutDetails{
+                max-width: 350px;
+            }
+        }
+    }
+    @include for-laptop{
+        .aboutSectionWrapper{
+            gap:calc(155/16) + rem;
+
+            .aboutDetails{
+                max-width: 580px;
+                .extendedSection{
+                    display: block;
+                }
+            }
+        }
+    }
+}

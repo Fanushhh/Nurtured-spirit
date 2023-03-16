@@ -1,0 +1,86 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.heroSection{
+    
+    .heroTitle{
+        font-family: $font-fam-heading;
+        text-transform: capitalize;
+        font-size: 2rem;
+        color:#D4AF37;
+        font-weight: 400;
+        line-height: calc(42/16) + rem;
+        margin-bottom: 2rem;
+    }
+
+    .heroDescription{
+        margin-top: 2rem ;
+        p{
+            padding-bottom: 1rem;
+        }
+    }
+    .aboutMeLink{
+        text-decoration: none;
+        color:#D4AF37;
+        font-weight: 700;
+    }
+
+    @include for-tablet{
+        position: relative;
+        .heroTitle{
+            font-size: calc(50/16) + rem;
+        }
+        .heroImgContainer{
+            justify-self: flex-end;
+            
+            img{
+                position: absolute;
+                width: 100%;
+                max-width: 352px;
+                right:0;
+                top:50px;
+            }
+        }
+
+        .heroDescription{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            div{
+                max-width: 354px;
+            }
+        }
+    }
+
+    @include for-laptop{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        
+        .heroImgContainer{
+            
+            width: 100%;
+            max-width: 560px;
+            img{
+                position: static;
+                max-width: 100%;
+            }
+        }
+
+        .heroDescription{
+            div{
+                max-width: inherit;
+            }
+            max-width: 560px;
+            padding-top: 2.5rem;
+        }
+
+        .heroTitle{
+            position: absolute;
+            left:0;
+            top:0;
+        }
+    }
+
+    
+}

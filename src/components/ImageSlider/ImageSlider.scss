@@ -1,0 +1,59 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+
+
+.react-multi-carousel-list  {
+    @include for-laptop{
+        justify-content: center;
+    }
+}
+
+.react-multi-carousel-track{
+    @include for-tablet{
+        gap:1.5rem;
+    }
+}
+.react-multi-carousel-item{
+    
+    background-color: #F5C8C7;
+    @include for-tablet{
+        max-width: 330px;
+    }
+    @include for-laptop{
+        max-width: 380px;
+    }
+}
+
+.cardContainer{
+    height: 100%;
+    
+    .cardDescriptionContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap:1.5rem;
+        padding: 1.5rem;
+
+        
+        .cardTitle{
+            font-size: 1.5rem;
+            color:#633232;
+            line-height: calc(30/16) + rem;
+            font-weight: bold;
+            
+        }
+        .cardButton{
+            justify-self: flex-end;
+            font-weight: 600;
+            background-color: #D4AF37;
+            color:white;
+            border-radius: .5rem;
+            width:fit-content;
+            padding: .87rem 2.5rem;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}

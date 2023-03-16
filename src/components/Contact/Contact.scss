@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.contactSection{
+
+    .contactDescription{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        
+    }
+    @include for-tablet{
+        max-width: calc(478/16) + rem;
+        margin: 0 auto;
+        .contactDescription{
+            max-width: 350px;
+        }
+    }
+}
