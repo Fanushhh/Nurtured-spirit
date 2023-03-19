@@ -38,7 +38,7 @@ export default function ImageSlider(){
                 <div className='cardDescriptionContainer'>
                     <p className='cardTitle'>{slide.title}</p>
                     <p className='cardDesc'>{slide.description}</p>
-                    <Link to={`/Nurtured-spirit-project/${slide.title.toLocaleLowerCase()}`} className='cardButton'>{slide.button}</Link>
+                    <Link to={`/Nurtured-spirit/${slide.title.toLocaleLowerCase()}`} className='cardButton'>{slide.button}</Link>
 
                 </div>
             </div>
