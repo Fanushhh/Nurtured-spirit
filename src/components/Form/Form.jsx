@@ -25,6 +25,8 @@ export default function Form(){
       e.target.reset();
     }
 
+    
+
 
 
 
@@ -32,13 +34,13 @@ export default function Form(){
         <form ref={form} onSubmit={sendEmail}>
             <div>
                 <label>Full Name
-                <input placeholder='Your full name' type='text' name='user_name' />
+                <input required placeholder='Your full name' type='text' name='user_name' />
                 </label>
             </div>
             <div>
                 <label>
                     Email Address
-                    <input placeholder='Your email address' type='email' name='user_email' />
+                    <input required placeholder='Your email address' type='email' name='user_email' />
                 </label>
             </div>
             <div>

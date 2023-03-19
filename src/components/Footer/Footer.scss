@@ -11,14 +11,16 @@ footer{
     text-align: center;
     padding: 2rem calc(74/16) + rem;
     .footerWrapper{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .logoImgContainer{
         margin-bottom: 1.5rem;
+        
     }
+    
+    
     .contactDetails{
         p{
             padding-bottom: .7rem;
@@ -52,6 +54,13 @@ footer{
             .socialsContainer{
                 order: 3;
             }
+            .logoImgContainer{
+                img{
+                position: absolute;
+                left:50%;
+                margin-left: -2.1rem;
+                top: 0;
+            }}
         }
     }
 

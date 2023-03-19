@@ -4,16 +4,15 @@ import Contact from './components/Contact/Contact';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';
 
-
 function App() {
 
   return (
-    <div className="App">
+    <main className='App'>
       <Hero />
       <About />
       <Services />
       <Contact />
-    </div>
+    </main>
   )
 }
 

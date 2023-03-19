@@ -2,16 +2,22 @@
 
 
 nav{
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     background-color: #E79090;
     padding: 1rem;
     justify-content: space-between;
-
+    width: 100%;
+    z-index: 100;
     .MuiSvgIcon-root{
         color:white;
         font-size: 40px;
+        transition: .2s ease-in-out;
+    }
+    .MuiSvgIcon-root:hover{
+        color:#F5C8C7;
+        cursor: pointer;
     }
     ul{
         position: absolute;
@@ -33,6 +39,9 @@ nav{
             text-decoration: none;
             color:white;
             font-size: 1rem;
+        }
+        .link:hover{
+            color:#F5C8C7;
         }
     }
 

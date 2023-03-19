@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import  {sliderData}  from './sliderData';
 import './ImageSlider.scss';
+import { Link } from 'react-router-dom';
 export default function ImageSlider(){
     const responsive = {
         superLargeDesktop: {
@@ -37,10 +38,21 @@ export default function ImageSlider(){
                 <div className='cardDescriptionContainer'>
                     <p className='cardTitle'>{slide.title}</p>
                     <p className='cardDesc'>{slide.description}</p>
-                    <p className='cardButton'>{slide.button}</p>
+                    <Link to={`/Nurtured-spirit-project/${slide.title.toLocaleLowerCase()}`} className='cardButton'>{slide.button}</Link>
+
                 </div>
             </div>
         })}
+        <div className='cardContainer'>
+                <div>
+                    <img src='./images/coming-soon-img.png' alt='coming soon card' />
+                </div>
+                <div className='cardDescriptionContainer'>
+                    <p className='cardTitle'>12 Week Program</p>
+                    <p className='cardDesc'>Discover Your True Self...</p>
+                    <p className='comingSoonBtn'>Coming soon</p>
+                </div>
+            </div>
     </Carousel>
   )
 };

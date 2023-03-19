@@ -10,11 +10,5 @@ export const sliderData = [
         title: `Kinesiology`,
         description: `A great way to uncover the root cause of stress and pain in order to balance the body, mind, emotions and spirit. Sessions are one hour long and are available in person only.`,
         button:`Read more`
-    },
-    {
-        imgUrl: './images/coming-soon-img.png',
-        title: `12 Week Program`,
-        description: `Discover Your True Self...`,
-        button:`Coming soon`
     }
 ]

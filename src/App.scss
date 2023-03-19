@@ -8,8 +8,9 @@ body{
   font-size: $font-size-mobile;
   color:black;
   min-height: 100vh;
-  background: url('/images/bg-pattern.svg');
+  background: url('./images/bg-pattern.svg');
   background-size: cover;
+  
   background-repeat: no-repeat;
   
 }
@@ -26,17 +27,16 @@ h1, h2, h3{
 }
 
 .App{
-  padding: 2rem 1rem calc(62/16) + rem;
+  padding: 7rem 1rem calc(62/16) + rem;
 
   @include for-tablet{
-    padding: calc(80/16) + rem 1.2rem calc(80/16) + rem;
+    padding: calc(180/16) + rem 1.2rem calc(80/16) + rem;
   }
 
   @include for-laptop{
     padding: calc(124/16) + rem;
   }
   @include for-desktop{
-    
     padding: calc(160/16) + rem;
-}
+  }
 }

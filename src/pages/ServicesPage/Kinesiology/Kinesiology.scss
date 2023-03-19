@@ -1,0 +1,71 @@
+@import '../../../styles/mixins';
+
+.kinesiologySection{
+    padding: 8rem 1rem calc(62/16) + rem;
+    min-height: 100vh;
+    font-size: 1rem;;
+    .linksContainer{
+        .arrow{
+            padding-left: .5rem;
+        }
+        a{
+            text-decoration: none;
+            color:#1C1C1C;
+            padding-right: .8rem;
+            transition: .2s ease-in-out;
+        }
+        a:hover{
+            cursor: pointer;
+            color:#E79090;
+        }
+    }
+    h1{
+        text-align: center;
+        margin: calc(60/16) + rem 0;
+    }
+
+    .kinesiologyDescriptionContainer{
+        display: flex;
+        gap:2rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            width: 100%;
+            max-width: 580px;
+        }
+        p{
+            padding-bottom: .75rem;
+        }
+    }
+    .sessionDescription{
+        margin: calc(190/16) + rem 0 calc(124/16) + rem;
+        
+        h2{
+            margin-bottom: calc(60/16) + rem;
+        }
+        p{
+            max-width: 1200px;
+            padding-bottom: 1rem;
+        }
+        ul li{
+            padding-bottom: .75rem;
+        }
+    }
+
+    @include for-tablet{
+        padding: calc(120/16) + rem 1.2rem calc(80/16) + rem;
+        .kinesiologyDescriptionContainer{
+            
+            flex-direction: row;
+        }
+    }
+
+    @include for-laptop{
+        padding: calc(124/16) + rem;
+    }
+    @include for-desktop{
+        padding: calc(160/16) + rem;
+    }
+
+}

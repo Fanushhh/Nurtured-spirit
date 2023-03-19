@@ -8,10 +8,29 @@
         justify-content: center;
     }
 }
-
+.react-multiple-carousel__arrow{
+    z-index: 0;
+}
 .react-multi-carousel-track{
+
+    gap:1rem;
+    justify-content: center;
     @include for-tablet{
         gap:1.5rem;
+    }
+    @include for-laptop{
+        width: 100%;
+    }
+}
+
+.react-multi-carousel-item:nth-child(3){
+    opacity: .5;
+    .cardContainer{
+        .cardDescriptionContainer{
+            .cardButton{
+                background-color: none;
+            }
+        }
     }
 }
 .react-multi-carousel-item{
@@ -31,7 +50,8 @@
     .cardDescriptionContainer{
         display: flex;
         flex-direction: column;
-        height: auto;
+        justify-content: space-between;
+        height: 280px;
         gap:1.5rem;
         padding: 1.5rem;
 
@@ -43,6 +63,13 @@
             font-weight: bold;
             
         }
+        .cardDesc{
+            display: -webkit-box;
+            line-clamp: 4;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
         .cardButton{
             justify-self: flex-end;
             font-weight: 600;
@@ -52,8 +79,18 @@
             width:fit-content;
             padding: .87rem 2.5rem;
         }
+        .comingSoonBtn{
+            padding: .87rem 0;
+        }
+
+        .cardButton:hover{
+            background-color: #d4b652;
+            cursor: pointer;
+        }
     }
     img{
         width: 100%;
     }
+
+    
 }

@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+
+.contactMePageSection{
+    padding: 8rem 1rem calc(62/16) + rem;
+    min-height: 100vh;
+    font-size: 1rem;;
+    .linksContainer{
+        margin-bottom: calc(60/16) + rem;
+        .arrow{
+            padding-left: .5rem;
+            
+        }
+        a{
+            text-decoration: none;
+            color:#1C1C1C;
+            padding-right: .8rem;
+            transition: .2s ease-in-out;
+        }
+        a:hover{
+            cursor: pointer;
+            color:#E79090;
+        }
+    }
+    @include for-tablet{
+        padding: calc(120/16) + rem 1.2rem calc(80/16) + rem;
+    }
+
+    @include for-laptop{
+        padding: calc(124/16) + rem;
+    }
+    @include for-desktop{
+        padding: calc(160/16) + rem;
+    }
+    h1{
+        text-align: center;
+        margin: calc(60/16) + rem 0;
+    }
+}
+

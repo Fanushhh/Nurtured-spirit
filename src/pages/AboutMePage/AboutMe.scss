@@ -1,0 +1,112 @@
+@import '../../styles/mixins';
+
+.aboutMePageSection{
+    padding: 8rem 1rem calc(62/16) + rem;
+    min-height: 100vh;
+    font-size: 1rem;
+    
+    .linksContainer{
+        margin-bottom: calc(60/16) + rem;
+        .arrow{
+            padding-left: .5rem;
+            
+        }
+        a{
+            text-decoration: none;
+            color:#1C1C1C;
+            padding-right: .8rem;
+            transition: .2s ease-in-out;
+        }
+        a:hover{
+            cursor: pointer;
+            color:#E79090;
+        }
+    }
+    .aboutMeSectionWrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap:3.9rem;
+        .profileImgContainer{
+            max-width: 550px;
+            width: 100%;
+        }
+        .descriptionContainer{
+            max-width: 580px;
+            width: 100%;
+        }
+        .descriptionContainer p{
+            padding-bottom: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+    .testimonialsSection{
+        h2{
+            margin-top: 7.75rem;
+            margin-bottom: 3.75rem;
+        }
+        .testimonialsContainer{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap:2rem;
+            .testimonial-item{
+                background-color:#F5C8C7;
+                padding:2rem;
+                .name{
+                    font-size: 1.75rem;
+                    font-weight: 700;
+                    margin-bottom: 1.5rem;
+                    color:#633232;
+                }
+                .review{
+                    color:#414141;
+                }
+            }
+        }
+        .arrowNavigator{
+            display: flex;
+            gap:1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            span{
+                color:#D4AF37;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+    
+    @include for-tablet{
+        padding: calc(240/16) + rem 1.2rem calc(80/16) + rem;
+        .aboutMePageSection{
+            h1{
+                text-align: center;
+            }
+        }
+        .aboutMeSectionWrapper{
+            flex-direction: column-reverse;
+            
+        }
+        
+    }
+
+    @include for-laptop{
+        padding: calc(124/16) + rem;
+        .aboutMeSectionWrapper{
+            flex-direction: row;
+            
+        }
+        .testimonialsSection{
+            .testimonialsContainer{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        
+    }
+    @include for-desktop{
+        padding: calc(160/16) + rem;
+        
+    }
+    
+}
+
