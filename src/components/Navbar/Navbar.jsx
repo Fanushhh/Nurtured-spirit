@@ -40,7 +40,7 @@ export default function Navbar(){
                         <Link className="link" to='about'>About me</Link>
                         <Link className="link" to='services'>Services</Link>
                         <Link className="link" to='contact'>Contact</Link>
-                        <Link className="link" to='blog'>Blog</Link>
+                        <Link className="link" to='/Nurtured-spirit-project/'>Blog</Link>
                     </ul>
                 )}
             </nav>
