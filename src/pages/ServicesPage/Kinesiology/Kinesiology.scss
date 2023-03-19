@@ -55,14 +55,15 @@
 
     @include for-tablet{
         padding: calc(120/16) + rem 1.2rem calc(80/16) + rem;
-        .kinesiologyDescriptionContainer{
-            
-            flex-direction: row;
-        }
+        
     }
 
     @include for-laptop{
         padding: calc(124/16) + rem;
+        .kinesiologyDescriptionContainer{
+            
+            flex-direction: row;
+        }
     }
     @include for-desktop{
         padding: calc(160/16) + rem;

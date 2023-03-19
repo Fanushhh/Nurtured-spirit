@@ -12,7 +12,7 @@ import Root from './routes/root';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path:'/Nurtured-spirit/',
     element:<Root />,
