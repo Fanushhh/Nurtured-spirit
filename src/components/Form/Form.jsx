@@ -25,11 +25,6 @@ export default function Form(){
       e.target.reset();
     }
 
-    
-
-
-
-
     return(
         <form ref={form} onSubmit={sendEmail}>
             <div>

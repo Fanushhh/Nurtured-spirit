@@ -30,17 +30,17 @@ export default function Navbar(){
         <header>
             <nav>
                 <div>
-                    <Link to='/Nurtured-spirit-project/'><img src='./images/logo-img.png' alt='logo img' /></Link>
+                    <Link to='/Nurtured-spirit/'><img src='./images/logo-img.png' alt='logo img' /></Link>
                 </div>
                 <div></div>
                 <MenuIcon ref={navbarRef} onClick={handleOpenMenu} fontSize="large" color="#FFFFFF"/>
                 {isMenuOpen && (
                     <ul >
-                        <Link className="link" to='/Nurtured-spirit-project/'>Home</Link>
+                        <Link className="link" to='/Nurtured-spirit/'>Home</Link>
                         <Link className="link" to='about'>About me</Link>
                         <Link className="link" to='services'>Services</Link>
                         <Link className="link" to='contact'>Contact</Link>
-                        <Link className="link" to='/Nurtured-spirit-project/'>Blog</Link>
+                        <Link className="link" to='blog'>Blog</Link>
                     </ul>
                 )}
             </nav>

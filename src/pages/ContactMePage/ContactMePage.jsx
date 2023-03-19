@@ -7,7 +7,7 @@ export default function ContactMePage(){
     return(
         <section className="contactMePageSection">
             <div className='linksContainer'>
-            <Link to='/Nurtured-spirit-project/'>Home<span className='arrow'>{'>'}</span></Link><span>Contact</span>
+            <Link to='/Nurtured-spirit/'>Home<span className='arrow'>{'>'}</span></Link><span>Contact</span>
             </div>
             <Contact />
         </section>

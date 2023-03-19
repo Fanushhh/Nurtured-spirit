@@ -16,7 +16,7 @@ export default function Hero(){
                 </div>
                 <p>More often than not we get caught up in the throes of daily life rarely taking the time to listen to ourselves and when we ignore it, pain and discomfort persists, issues arise, and we are forced to stop and reassess.</p>
                 <p>If you are experiencing pain and discomfort in your body and in certain areas of your life and would like some support with this, reach out. We are here to help.</p>
-                <p>To find out more about our services, <Link className='aboutMeLink' to='/Nurtured-spirit-project/about'>click here</Link></p>
+                <p>To find out more about our services, <Link className='aboutMeLink' to='/Nurtured-spirit/about'>click here</Link></p>
                 
             </div>
         </section>

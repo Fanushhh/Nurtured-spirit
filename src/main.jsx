@@ -14,7 +14,7 @@ import ScrollToTop from './components/utils/utils';
 
 const router = createBrowserRouter([
   {
-    path:'/Nurtured-spirit-project/',
+    path:'/Nurtured-spirit/',
     element:<Root />,
     errorElement: <ErrorPage />,
     children:[{
@@ -49,6 +49,10 @@ const router = createBrowserRouter([
     {
       path: 'contact',
       element:<ContactMePage />,
+    },
+    {
+      path: '*',
+      element:<ErrorPage />,
     },
     
   ]

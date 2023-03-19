@@ -17,7 +17,7 @@ export default function About(){
                         <p>I have always had a passion and a natural desire to want to help others so I learnt Kinesiology and Reiki as a means to do so.</p>
                         <p>I soon learnt that my life and the way things were going for me at the time could change as I became more aware and understanding of my own internal patterns, choices and responses/reactions in life.</p>
                     </div>
-                    <Link to='/Nurtured-spirit-project/about'>See more <img src='./images/arrow-icon.svg' alt='arrow icon' /></Link>
+                    <Link to='/Nurtured-spirit/about'>See more <img src='./images/arrow-icon.svg' alt='arrow icon' /></Link>
                 </div>
             </div>
         </section>
