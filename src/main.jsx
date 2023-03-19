@@ -7,12 +7,12 @@ import ContactMePage from './pages/ContactMePage/ContactMePage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import Reiki from './pages/ServicesPage/Reiki/Reiki';
 import Kinesiology from './pages/ServicesPage/Kinesiology/Kinesiology';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path:'/Nurtured-spirit/',
     element:<Root />,
