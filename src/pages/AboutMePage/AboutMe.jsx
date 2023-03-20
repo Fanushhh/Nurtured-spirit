@@ -5,7 +5,7 @@ export default function AboutMePage(){
     return(
         <section className="aboutMePageSection">
             <div className='linksContainer'>
-            <Link to='/Nurtured-spirit/'>Home<span className='arrow'>{'>'}</span></Link><span>About me</span>
+            <Link to='/'>Home<span className='arrow'>{'>'}</span></Link><span>About me</span>
             </div>
             <h1>Ebony Gafa</h1>
             <div className='aboutMeSectionWrapper'>

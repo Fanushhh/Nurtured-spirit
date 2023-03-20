@@ -7,8 +7,8 @@ export default function Reiki(){
     return(
         <section className="reikiSection">
             <div class="linksContainer">
-                <Link to='/Nurtured-spirit/'>Homepage <span className='arrow'>{'>'}</span></Link>
-                <Link to="/Nurtured-spirit/services">Services <span className='arrow'>{'>'}</span></Link>
+                <Link to='/'>Homepage <span className='arrow'>{'>'}</span></Link>
+                <Link to="/services">Services <span className='arrow'>{'>'}</span></Link>
                 <span>Reiki</span>
             </div>
             <h1>Reiki</h1>

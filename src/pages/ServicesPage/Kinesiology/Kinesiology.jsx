@@ -6,8 +6,8 @@ export default function Kinesiology(){
     return(
         <section className="kinesiologySection">
             <div className="linksContainer">
-                <Link to='/Nurtured-spirit/'>Homepage <span className='arrow'>{'>'}</span></Link>
-                <Link to="/Nurtured-spirit/services">Services <span className='arrow'>{'>'}</span></Link>
+                <Link to='/'>Homepage <span className='arrow'>{'>'}</span></Link>
+                <Link to="/services">Services <span className='arrow'>{'>'}</span></Link>
                 <span>Kinesiology</span>
             </div>
             <h1>Kinesiology</h1>

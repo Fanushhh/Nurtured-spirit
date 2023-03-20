@@ -2,6 +2,7 @@
 
 .servicesPageSection{
     padding: 8rem 1rem calc(62/16) + rem;
+    
     .linksContainer{
         .arrow{
             padding-right: .5rem;
@@ -26,6 +27,7 @@
     }
     @include for-desktop{
         padding: calc(160/16) + rem;
+        font-size: 1rem;
     }
     h1{
         text-align: center;

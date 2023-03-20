@@ -12,9 +12,9 @@ import Root from './routes/root';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path:'/Nurtured-spirit/',
+    path:'/',
     element:<Root />,
     errorElement: <ErrorPage />,
     children:[{
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
           path: 'kinesiology',
           element:<Kinesiology />,
         },
+        {
+          path: '*',
+          element:<ErrorPage />,
+        }
       ]
     },
     {
